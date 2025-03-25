@@ -1,0 +1,188 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  text-align: justify;
+}
+
+/* 네비게이션 바가 고정되므로 일반 화면에서는 상단 여백 추가 */
+.resume-container {
+  margin: 90px auto 20px; /* 고정된 nav bar 높이와 여백 고려 */
+  max-width: 1200px;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.navbar-brand {
+  font-weight: 600;
+}
+.navbar-text-info {
+  margin-left: 15px;
+}
+.navbar-text-info .title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navbar-text-info .subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+/* nav-link hover 시 텍스트에 gradient 효과 적용 */
+.navbar-nav .nav-link:hover {
+  background: linear-gradient(45deg, #1e90ff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s;
+}
+
+/* 왼쪽 사이드바 */
+.sidebar {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecef;
+}
+/* PC 환경에서 사이드바 고정을 위한 sticky 적용 */
+@media (min-width: 992px) {
+  .sidebar {
+    position: sticky;
+    top: 90px; /* 고정된 네비게이션 바로 아래에서 시작 */
+  }
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  border: 3px solid #2575fc;
+  margin: 0 auto 15px;
+  display: block;
+}
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.sidebar p,
+.sidebar li {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.sidebar .section-title {
+  font-size: 1.1rem;
+  border-bottom: 1px solid #2575fc;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* 오른쪽 메인 컨텐츠 */
+.main-content {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #e9ecef;
+}
+.main-content h3 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid #2575fc;
+  padding-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.main-content li {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+/* 공통 버튼 */
+.btn-url {
+  background: linear-gradient(45deg, #1e90ff, #00bfff);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+.btn-url:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 타임라인 */
+.timeline {
+  position: relative;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  background-color: #dee2e6;
+  top: 0;
+  bottom: 0;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item .marker {
+  position: absolute;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #1e90ff, #00bfff);
+  top: 5px;
+}
+.timeline-item .timeline-content {
+  background-color: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+.timeline-item .timeline-content h5 {
+  font-size: 0.95rem;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+.timeline-item .timeline-content p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* 인쇄 미디어: 네비게이션 바 숨김 및 상단 여백 조정 */
+@media print {
+  .navbar {
+    display: none;
+  }
+  .resume-container {
+    margin-top: 20px;
+  }
+}
