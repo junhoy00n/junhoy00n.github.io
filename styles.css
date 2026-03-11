@@ -249,9 +249,9 @@ body {
 
 
 .role-tag { font-size: 0.65rem; font-weight: 700; padding: 2px 6px; border-radius: 3px; display: inline-flex; align-items: center; gap: 3px; }
-.role-tag.co { background: #999999; color: #fff; }
-.role-tag.first { background: #666666; color: #fff; }
-.role-tag.corresponding { background: #333333; color: #fff; }
+.role-tag.co { background: #eee; color: #333; }
+.role-tag.first { background: var(--primary-blue); color: #fff; }
+.role-tag.corresponding { background: var(--dark-bg); color: #fff; }
 
 .status-tag { font-size: 0.65rem; font-weight: bold; padding: 2px 6px; border-radius: 3px; }
 .submit { background: #eee; color: #333 !important; }
@@ -453,4 +453,5 @@ body {
         page-break-after: avoid !important;
         break-after: avoid !important;
     }
+
 }
