@@ -418,6 +418,7 @@ body {
 
 #paper-all:checked ~ .paper-filter-labels label[for="paper-all"],
 #paper-review:checked ~ .paper-filter-labels label[for="paper-review"],
+#paper-2027:checked ~ .paper-filter-labels label[for="paper-2027"],
 #paper-2026:checked ~ .paper-filter-labels label[for="paper-2026"],
 #paper-2025:checked ~ .paper-filter-labels label[for="paper-2025"],
 #paper-2024:checked ~ .paper-filter-labels label[for="paper-2024"],
@@ -430,6 +431,7 @@ body {
 
 #paper-all:checked ~ .paper-filter-labels label[for="paper-all"] span,
 #paper-review:checked ~ .paper-filter-labels label[for="paper-review"] span,
+#paper-2027:checked ~ .paper-filter-labels label[for="paper-2027"] span,
 #paper-2026:checked ~ .paper-filter-labels label[for="paper-2026"] span,
 #paper-2025:checked ~ .paper-filter-labels label[for="paper-2025"] span,
 #paper-2024:checked ~ .paper-filter-labels label[for="paper-2024"] span,
