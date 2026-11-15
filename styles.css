@@ -669,6 +669,7 @@ body {
 }
 
 #paper-review:checked ~ .paper-timeline .paper-year-group:not(.paper-year-review),
+#paper-2027:checked ~ .paper-timeline .paper-year-group:not(.paper-year-2027),
 #paper-2026:checked ~ .paper-timeline .paper-year-group:not(.paper-year-2026),
 #paper-2025:checked ~ .paper-timeline .paper-year-group:not(.paper-year-2025),
 #paper-2024:checked ~ .paper-timeline .paper-year-group:not(.paper-year-2024),
